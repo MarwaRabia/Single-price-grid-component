@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+/*  */
+
+:root {
+  --Cyan: hsl(179, 62%, 43%);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+
+  --Light-Gray: hsl(204, 43%, 93%);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Karla", sans-serif;
+  background-color: #e6eff6;
+}
+.container {
+  width: 45%;
+  box-shadow: 0 5px 10px 5px rgb(0 0 0 / 10%);
+}
+.up {
+  background-color: white;
+  padding: 1.5rem;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.up h3 {
+  color: var(--Cyan);
+  font-weight: 900;
+  margin-bottom: 1.3rem;
+}
+.up h4 {
+  color: var(--Bright-Yellow);
+  margin-bottom: 15px;
+}
+.up p {
+  color: var(--Grayish-Blue);
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 500;
+}
+.down {
+  display: flex;
+  color: white;
+}
+
+.left {
+  width: 50%;
+  background-color: var(--Cyan);
+  padding: 1.5rem;
+  border-bottom-left-radius: 5px;
+}
+.right {
+  width: 50%;
+  background-color: #50cccb;
+  padding: 1.5rem;
+  border-bottom-right-radius: 5px;
+}
+.right p {
+  margin-top: 1.5rem;
+  font-size: 14px;
+  width: 63%;
+  line-height: 23px;
+  font-weight: 300;
+}
+.p-f {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+}
+span:first-of-type {
+  font-size: 30px;
+}
+span:last-of-type {
+  opacity: 0.5;
+}
+.p-s {
+  margin-top: 0.5rem;
+}
+button {
+  margin-top: 1.9rem;
+  width: 100%;
+  color: white;
+  background-color: var(--Bright-Yellow);
+  border: none;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  padding: 15px;
+  font-weight: bold;
+  box-shadow: 0 5px 10px 5px rgb(0 0 0 / 10%);
+}
+
+@media (max-width: 800px) {
+  .container {
+    width: 90%;
+    margin: 4rem 2rem;
+  }
+  .down {
+    flex-direction: column;
+    width: 100%;
+  }
+  .left,
+  .right {
+    width: 100%;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+  }
+  .right {
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  footer {
+    position: absolute;
+    bottom: -10rem;
+    left: 90%;
+  }
+  .attribution {
+          width: 300px;
+  }
+}
